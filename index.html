@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bin2Dec</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <h2>Conversor de binário para decimal</h2>
+
+    <p>Binário: <input type="text" id="valor-binario" placeholder="Insira o valor em binário" maxlength="8" oninput="this.value=this.value.replace(/[^0-1]/g,'');"></p>
+    <p>Decimal: <input type="text" id='resultado' placeholder="Valor convertido" readonly></p>
+
+    <button id="btn-enviar" onclick="converte()">Converter</button>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
